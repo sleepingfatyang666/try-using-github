@@ -36,7 +36,7 @@ jobs:
           TZ_NAME: America/Chicago
           RUN_WINDOW_HOUR: "10"
           FORCE_SEND: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
-        run: python src/daily_digest.py
+        run: python src/run_digest.py
 
       - name: Commit generated archive
         run: |
