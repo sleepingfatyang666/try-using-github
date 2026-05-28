@@ -2,10 +2,6 @@ name: Daily Discord Digest
 
 on:
   workflow_dispatch:
-  schedule:
-    # GitHub cron is UTC. Running at both 15:05 and 16:05 UTC lets the
-    # Python script honor 10:00 America/Chicago across daylight saving time.
-    - cron: "5 15,16 * * *"
 
 permissions:
   contents: write
